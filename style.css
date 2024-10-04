@@ -3,7 +3,7 @@
 :root{
     --cor-de-fundo: #cef3b6;
     --cor-primaria: #387F39;
-    --cor-secundaria: #BEDC74;
+    --cor-secundaria: #194e12;
     --fonte: "Montserrat", sans-serif;
 }
 
@@ -47,4 +47,26 @@ nav a:hover{
     text-decoration: underline;
     transform: scale(0.9);
     transition: transform 0.5s;
+}
+
+span{
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+    text-align: center;
+}
+
+.graficos-container{
+    margin: 5rem;
+}
+
+.graficos-texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor-secundaria) solid 2px;
 }
