@@ -1,3 +1,4 @@
+import { getCSS } from "./comum.js";
 
 async function quantidadeDeUsuarios(){
 
@@ -11,7 +12,10 @@ const infos = [
     {
         x: nomeDasRedes,
         y: quantidadeDeUsuarios,
-        type: 'bar'
+        type: 'bar',
+        marker:{
+            color: getCSS(--cor-primaria)
+        }
     }
 ]
 
