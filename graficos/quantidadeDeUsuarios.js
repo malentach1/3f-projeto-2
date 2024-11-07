@@ -1,4 +1,4 @@
-import { getCSS } from "./comum.js";
+import { getCSS, tickfont } from "./comum.js";
 
 async function quantidadeDeUsuarios(){
 
@@ -29,6 +29,25 @@ const layout = {
             color: getCSS('--cor-primaria'),
             family: getCSS('--font'),
             size: 30
+        }
+    },
+    xaxis:{
+        tickfont: tickfont,
+        title: {
+            text: 'Nome das redes sociais',
+            font:{
+                color: getCSS('--cor-secundaria')
+            }
+        }
+
+    },
+    yaxis: {
+        tickfont: tickfont,
+        title:{
+            text: 'Milhões de usuários ativos',
+            font:{
+                color: getCSS('--cor-secundaria')
+            }
         }
     }
 }
